@@ -4,6 +4,7 @@
   "description": "Backend server for Multi-AI Browser with Stripe payments and MongoDB",
   "main": "src/server.js",
   "scripts": {
+    "build": "echo 'No build step required'",
     "start": "node src/server.js",
     "start:test": "NODE_ENV=development node src/server.js",
     "start:prod": "NODE_ENV=production node -r dotenv/config src/server.js dotenv_config_path=.env.production",
