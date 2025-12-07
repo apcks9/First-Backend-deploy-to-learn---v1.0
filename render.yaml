@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: multiai-backend
+    env: node
+    region: oregon
+    rootDir: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
